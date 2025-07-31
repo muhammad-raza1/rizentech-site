@@ -1,15 +1,186 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Home | Rizen Tech Ltd</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rizen Tech Ltd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      background-color: #0a0a0a;
+      color: #ffffff;
+    }
+
+    header {
+      background-color: #0a0a0a;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid red;
+    }
+
+    header h1 {
+      color: red;
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: red;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: red;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      color: #ccc;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: red;
+    }
+
+    .section p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #ccc;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .service-box {
+      background-color: #111;
+      padding: 30px;
+      border: 1px solid red;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px red;
+    }
+
+    footer {
+      background-color: #000;
+      padding: 30px;
+      text-align: center;
+      border-top: 2px solid red;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Rizen Tech Ltd</h1>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
-  <p>This is our homepage. We offer web, mobile, and AI solutions.</p>
+  <header>
+    <h1>Rizen Tech</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Innovative SaaS & Web Solutions</h2>
+    <p>We build scalable, intelligent, and cutting-edge applications for the digital future. Empowering businesses with AI, Web, and Mobile solutions.</p>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Us</h3>
+    <p>Rizen Tech is a modern software house driven by innovation and efficiency. From mobile apps to AI-integrated platforms, we bring your digital vision to life.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h3>Our Services</h3>
+    <div class="services">
+      <div class="service-box">
+        <h4>Mobile App Development</h4>
+        <p>We build seamless apps using Flutter & React Native for iOS and Android.</p>
+      </div>
+      <div class="service-box">
+        <h4>Web Development</h4>
+        <p>Fast, responsive, SEO-friendly websites with MERN stack and Firebase.</p>
+      </div>
+      <div class="service-box">
+        <h4>AI Solutions</h4>
+        <p>Deploy smart systems with NLP, Computer Vision, and Machine Learning.</p>
+      </div>
+      <div class="service-box">
+        <h4>Cloud Services</h4>
+        <p>Secure and scalable cloud deployment on AWS, GCP, and Firebase.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: contact@rizentechltd.com</p>
+    <p>Phone: +92-XXX-XXXXXXX</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Rizen Tech Ltd. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
